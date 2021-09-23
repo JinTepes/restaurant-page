@@ -1,0 +1,19 @@
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* styling the navbar */
+#navContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:aqua;    
+}
+#navContainer > h1{
+    padding: 10px 25px;
+}
+#navContainer > h1:hover{
+    background-color: bisque;
+}
