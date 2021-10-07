@@ -5,6 +5,7 @@ import './style.css';
 import addNav from "./modules/navbar.js";
 import buildHome from './modules/home.js';
 import buildAbout from './modules/about.js';
+import buildMenu from './modules/menu.js';
 //parent div
 const content = document.getElementById("content");
 //adding the navbar
@@ -23,4 +24,29 @@ function addHome(){
 function addAbout(){
     infoBody.innerHTML = "";
     infoBody.appendChild(buildAbout());
+}
+function addMenu(){
+    infoBody.innerHTML = "";
+    infoBody.appendChild(buildMenu());
+}
+
+//button clicks
+let navHome = document.getElementById("navHome");
+navHome.onclick = function(){
+    addHome();
+    //Home order button click
+    let orderBTN = document.getElementById('btn_order');
+    orderBTN.onclick = function() {
+        navMenu.click();
+    }
+}
+
+let navAbout = document.getElementById("navAbout");
+navAbout.onclick = function(){
+    addAbout();
+}
+
+let navMenu = document.getElementById("navMenu");
+navMenu.onclick = function(){
+    addMenu();
 }

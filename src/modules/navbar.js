@@ -9,8 +9,11 @@ function buildNav(){
     //labeling elements for css
     navcon.id = "navContainer";
     lbl_home.classList.add("navItem");
+    lbl_home.id = "navHome";
     lbl_menu.classList.add("navItem");
+    lbl_menu.id = "navMenu";
     lbl_about.classList.add("navItem");
+    lbl_about.id = "navAbout";
     //puting text onto nav elements
     lbl_home.innerHTML = "Home";
     lbl_menu.innerHTML = "Menu";
